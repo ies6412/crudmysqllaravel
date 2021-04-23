@@ -1,0 +1,7 @@
+{
+  "name": "crudmysqllaravel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
