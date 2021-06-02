@@ -1,0 +1,24 @@
+
+<app-nuevoproducto  ></app-nuevoproducto>
+
+
+
+<ion-content color="dark" >  
+  <ion-refresher slot="fixed" (ionRefresh)="refrescar($event)">
+    <ion-refresher-content
+      pullingIcon="chevron-down-circle-outline"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+  
+   <app-lista-producto [Productos]="Productos" >  
+   </app-lista-producto>
+   <!-- <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> -->
+ 
+</ion-content>

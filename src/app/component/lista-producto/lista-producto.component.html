@@ -1,0 +1,50 @@
+
+
+
+<h1 *ngIf="Productos.length===0"></h1>
+
+<ion-list  class="fondolist">
+
+  
+  <ion-item-sliding *ngFor="let producto of Productos;let i=index" #slidingItem >
+    
+     
+
+
+   <ion-item-options side="start" class="claseitemoption" >
+      <ion-item-option   >
+      <ion-fab-button >
+         <ion-icon name="cart-outline"></ion-icon></ion-fab-button>
+     </ion-item-option>
+     </ion-item-options>
+  
+   
+           <ion-item color="dark">
+          
+               <ion-thumbnail >
+                <span class="text-primary" >{{i+1}}</span>
+               <img [src]="producto.imagenurl|imagen">
+               </ion-thumbnail>
+              
+                
+                  <h5 class="ion-padding-start">{{producto.nombre}}</h5>
+                  <h6 slot="end">${{producto.precio}}</h6>
+               
+              
+              </ion-item>
+
+              
+        
+        <ion-item-options side="end" class="claseitemoption" >
+         <ion-item-option   >
+         <ion-fab-button  (click)="abrirdetalle(producto,slidingItem)" >
+           <ion-icon name="eye-outline"></ion-icon></ion-fab-button>
+        </ion-item-option>
+        <ion-item-option  >
+          <ion-fab-button (click)="eliminar(producto.id,slidingItem)" color="danger">  <ion-icon name="trash-outline"  ></ion-icon></ion-fab-button>
+          </ion-item-option>
+         </ion-item-options>
+  </ion-item-sliding>
+      
+    
+  </ion-list>

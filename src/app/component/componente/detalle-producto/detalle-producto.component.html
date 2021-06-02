@@ -1,0 +1,83 @@
+ <ion-header>
+
+  <ion-toolbar>
+    <ion-title>{{products.nombre}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrarmodal()" >
+         <ion-icon slot="icon-only" name="close"></ion-icon></ion-button>
+         </ion-buttons>
+         <!-- <ion-button routerLink="/productos" >
+          <ion-icon slot="icon-only" name="close"></ion-icon></ion-button>
+          </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="pencil-outline" (click)="actualizar(products)"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+  <ion-card>
+    <ion-card-content>
+      <img [src]="products.imagenurl">
+      <ion-card-subtitle>{{products.nombre}}</ion-card-subtitle>
+      <ion-card-title>{{products.categoria}}</ion-card-title>
+      <ion-item>{{products.descripcion}}</ion-item>
+
+    </ion-card-content>
+  
+
+</ion-card>
+<ion-grid >
+  <ion-row>
+   <ion-col size="6" fixed>
+     <ion-button >
+      Deseo
+      <ion-buttons >
+      <ion-icon name="cart-outline" ></ion-icon>
+    </ion-buttons>
+    </ion-button>
+  </ion-col>
+  
+    <ion-col size="6" fixed>
+     
+    </ion-col>
+  </ion-row>
+  
+</ion-grid>
+</ion-content>
+
+<!--<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Footer - No Border</ion-title>
+  </ion-toolbar>
+</ion-footer> -->
+<ion-footer>
+  <ion-toolbar>
+    
+    <ion-grid>
+      <ion-row >
+        <ion-col size="6" class="flex-column">
+          <ion-button class="back-button-disabled">
+          
+            <ion-buttons (click)="deseoproducto()" >
+            Lista de deseo  
+         </ion-buttons>
+          <ion-icon name="sparkles-outline"></ion-icon>
+        </ion-button>
+  </ion-col>
+  <ion-col size="6">
+      <ion-button >   
+    <ion-buttons >Añadir a carrito</ion-buttons>
+    <ion-icon name="cart-outline"></ion-icon></ion-button> 
+ </ion-col>
+  </ion-row>
+  </ion-grid>
+
+  </ion-toolbar>
+</ion-footer>
+

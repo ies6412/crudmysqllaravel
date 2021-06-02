@@ -24,3 +24,26 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.claseitemoption{
+
+ ion-item-option {
+                      --background:none; 
+                      --color: #ffffff;
+                 }
+
+}
+.backnegro{
+    background-color:none;
+   
+}
+.fondolist{
+    display: inherit;
+}
+.text-primary{
+    color:var(--ion-color-primary )!important;
+    font-size: 8px;
+    
+    
+    }
