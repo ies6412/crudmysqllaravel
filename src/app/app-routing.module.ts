@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   {
     path:'',
-    redirectTo:'productos',
+    redirectTo:'mapa2',
     pathMatch:'full'
   },
     {
@@ -42,6 +42,14 @@ const routes: Routes = [
   {
     path: 'pruebas',
     loadChildren: () => import('./page/pruebas/pruebas.module').then( m => m.PruebasPageModule)
+  },
+  {
+    path: 'mapa',
+    loadChildren: () => import('./page/mapa/mapa.module').then( m => m.MapaPageModule)
+  },
+  {
+    path: 'mapa2',
+    loadChildren: () => import('./page/mapa2/mapa2.module').then( m => m.Mapa2PageModule)
   },
   // {
   //   path: 'actualizarcompo',
