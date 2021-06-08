@@ -50,7 +50,11 @@ const routes: Routes = [
   {
     path: 'mapa2',
     loadChildren: () => import('./page/mapa2/mapa2.module').then( m => m.Mapa2PageModule)
+  },  {
+    path: 'camara1',
+    loadChildren: () => import('./page/camara1/camara1.module').then( m => m.Camara1PageModule)
   },
+
   // {
   //   path: 'actualizarcompo',
   //   loadChildren: () => import('./page/actualizarcompo/actualizarcompo.module').then( m => m.ActualizarcompoPageModule)
