@@ -3,7 +3,19 @@
     <ion-title>camara1</ion-title>
   </ion-toolbar>
 </ion-header>
-
+<ion-grid>
+  <ion-row>
+     <ion-col  size="4" *ngFor="let photos of sercam.photoca  ;index as i">
+      <ion-img [src]="photos.webviewpath"></ion-img>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 <ion-content>
 
+
 </ion-content>
+<ion-footer>
+  <ion-fab-button class="posicion" (click)="tomarfotos()"> 
+
+   <ion-icon name="camera-outline"></ion-icon></ion-fab-button>
+</ion-footer>
