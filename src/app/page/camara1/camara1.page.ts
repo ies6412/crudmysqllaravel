@@ -1,5 +1,5 @@
 import { Camaracap } from './../../interface/camaracap';
-import { CamaracapacitorService } from './../../servicio/camaracapacitor.service';
+import {CamaracapacitorService } from './../../servicio/camaracapacitor.service'
 import { Component, OnInit } from '@angular/core';
 
 
