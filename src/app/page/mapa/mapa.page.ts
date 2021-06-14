@@ -1,4 +1,4 @@
-import { Marker } from './../../interface/googlemaps';
+import { Marker } from './../../interface/googlemaps'
 import { GooglemapsService } from './../../servicio/googlemaps.service';
 import { Component, OnInit, Renderer2, ViewChild, ElementRef, Inject, Injectable } from '@angular/core';
 import { DOCUMENT} from '@angular/common';

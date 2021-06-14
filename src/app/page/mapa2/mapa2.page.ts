@@ -137,7 +137,7 @@ export class Mapa2Page implements OnInit {
 
     const position={
       lat:position_res.coords.latitude,
-      long:position_res.coords.longitude
+      lng:position_res.coords.longitude
     }
     this.addMarker(position);
 
