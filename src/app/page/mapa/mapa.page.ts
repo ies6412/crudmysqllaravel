@@ -1,3 +1,5 @@
+import { Menu } from './../../interface/menu';
+import { MenuservicioService } from './../../servicio/menuservicio.service';
 import { Marker } from './../../interface/googlemaps'
 import { GooglemapsService } from './../../servicio/googlemaps.service';
 import { Component, OnInit, Renderer2, ViewChild, ElementRef, Inject, Injectable } from '@angular/core';
@@ -44,15 +46,18 @@ export class MapaPage implements OnInit {
     },
   ];
 
-
+  menus:Menu[]=[]
   constructor(private googleservice:GooglemapsService,
     @Inject (DOCUMENT) private document,
-    private renderer:Renderer2,) { }
+    private renderer:Renderer2
+    
+    ) { }
 
   ngOnInit() {
 
-    this.init();
 
+    this.init();
+    
     
   }
 

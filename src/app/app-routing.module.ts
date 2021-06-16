@@ -3,10 +3,10 @@ import { NgModule, Component } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  /*{
+  {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },*/
+  },
   /*{
     path: '',
     redirectTo: 'home',
@@ -50,7 +50,8 @@ const routes: Routes = [
   {
     path: 'mapa2',
     loadChildren: () => import('./page/mapa2/mapa2.module').then( m => m.Mapa2PageModule)
-  },  {
+  },
+  {
     path: 'camara1',
     loadChildren: () => import('./page/camara1/camara1.module').then( m => m.Camara1PageModule)
   },

@@ -1,0 +1,37 @@
+[
+    {
+      "icon":"bag-outline",
+      "nombre":"Productos",
+      "url":"productos"
+
+    },
+
+  {
+    "icon":"bag-add-outline",
+    "nombre": "Nuevo Producto",
+    "url": "nuevoproducto"
+  },
+ 
+   
+  {
+    "icon":"sparkles-outline",
+    "nombre": "Lista de deseo",
+    "url": "pruebas"
+  },
+  {
+    "icon":"map-outline",
+    "nombre": "Mapa",
+    "url": "mapa"
+  },
+  {
+    "icon":"locate-outline",
+    "nombre": "Geolocalización",
+    "url": "mapa2"
+  },
+  {
+    "icon":"camera-outline",
+    "nombre": "Cámara",
+    "url": "camara1"
+  }
+]
+
